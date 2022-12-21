@@ -1,0 +1,98 @@
+@media (max-width: 916px) {
+  html {
+    font-size: 55.5%;
+  }
+  .container {
+    max-width: 100%;
+    height: 93vh;
+  }
+  .heading_area h1 i {
+    font-size: 1.5rem;
+  }
+  .message_box {
+    margin: 0 0 7.28rem ;
+  }
+  .left_message_box {
+    max-width: 42rem;
+  }
+  .right_message_box {
+    max-width: 42rem;
+  }
+  .form_area {
+    background: #366199;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  form {
+    width: 95%;
+  }
+  .input_area {
+    width: 88%;
+  }
+  .btn {
+    width: 12%;
+  }
+}
+
+
+@media (max-width: 700px) {
+  html {
+    font-size: 52.5%;
+  }
+  .container {
+    height: 94vh;
+  }
+}
+
+@media (max-width: 560px) {
+  p {
+    font-size: 1.6rem;
+  }
+  .left_message_box {
+    max-width: 38rem;
+  }
+  .right_message_box {
+    max-width: 38rem;
+  }
+  .warning_area {
+    width: 80%;
+  }
+  .msgTime {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    height: 94vh;
+  }
+  .left_message_box {
+    max-width: 35rem;
+  }
+  .right_message_box {
+    max-width: 35rem;
+  }
+  .input_area {
+    width: 83%;
+  }
+  .input_box {
+    padding: 1.2rem 1.8rem;
+  }
+  .btn {
+    width: 17%;
+    padding: 1.2rem 2rem;
+  }
+}
+
+@media (max-width: 330px) {
+  html {
+    font-size: 45.5%;
+  }
+  .left_message_box {
+    max-width: 28rem;
+  }
+  .right_message_box {
+    max-width: 28rem;
+  }
+}

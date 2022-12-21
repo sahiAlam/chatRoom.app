@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chatRoom</title>
+    <!-- fontawesome CDN link  -->
+    <script
+      src="https://kit.fontawesome.com/4ea6e3ab0b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Main css file  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responseve css file -->
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Main container  -->
+    <section id="wrapper">
+      <!-- Message Container  -->
+      <div class="container">
+        <!-- Header area  -->
+        <div class="heading_area">
+          <div class="left_heading">
+            <h1><i class="fa-solid fa-users"></i>ChatRoom</h1>
+          </div>
+          <div class="right_heading">
+            <img src="./images/liveLogo.png" alt="liveLogo" class="liveLogo" />
+          </div>
+        </div>
+
+        <!-- Chat body -->
+        <div class="chat_body_container">
+          <!-- Warning area  -->
+          <div class="warning_area">
+            <p>
+              <i class="fa-solid fa-lock"></i>
+              Messages are end-to-end encrypted No one outside of this chat chat
+              not even chatRoom, can read to them.
+            </p>
+          </div>
+          <!-- Welcome message Area  -->
+          <div class="welcome_area">
+            <h2>Welcome <span id="welcomeName"></span></h2>
+          </div>
+          <!-- Main message block where messages appened dynamically -->
+          <div class="message_box"></div>
+        </div>
+      </div>
+      <div class="form_area">
+        <form action="#" id="messageForm">
+          <div class="input_area">
+            <input
+              type="text"
+              id="messageInput"
+              class="input_box"
+              placeholder="Type a message..."
+              autocomplete="off"
+            />
+            <!-- <i class="fa-regular fa-face-smile emoji"></i> -->
+          </div>
+          <div class="button_area">
+            <button type="submit" id="submitMessage" class="btn">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Js linking -->
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+  </body>
+</html>

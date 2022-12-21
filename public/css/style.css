@@ -1,0 +1,183 @@
+/* Google font  */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+/*=================  Common css =================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(69, 69, 69);
+  font-family: "Open Sans", sans-serif;
+  display: none;
+}
+html {
+  font-size: 62.5%;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+/* variables */
+:root {
+  --color-light: #fff;
+  --colr-dark: #000;
+  --left-chat-color: rgb(230, 230, 230);
+  --btn-color: #00a884;
+  --right-chat-color: rgb(167, 241, 188);
+  --heading-color: #366199;
+  --secondary-background: #282c34;
+}
+
+/*=================  heading_area CSS =================*/
+#wrapper {
+  height: 100vh;
+}
+
+.heading_area {
+  background-color: var(--heading-color);
+  padding: 1rem 2rem;
+  text-align: left;
+  color: var(--color-light);
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading_area h1 i {
+  padding: 0.8rem 0.7rem;
+  background-color: var(--right-chat-color);
+  border-radius: 50%;
+  margin-right: 0.6rem;
+}
+
+.liveLogo {
+  width: 7rem;
+  color: var(--color-light);
+  display: inline-block;
+}
+
+/*=================  Warning Area CSS ================= */
+.warning_area {
+  width: 50%;
+  margin: 0.6rem auto;
+  padding: 1rem;
+  background: #ffd7c3;
+  border-radius: 1rem;
+}
+.warning_area p {
+  color: var(--colr-dark);
+  font-size: 1.3rem;
+  text-align: center;
+}
+.warning_area i {
+  font-size: 1.2rem;
+}
+
+/* =================  Welcome area CSS  =================*/
+.welcome_area {
+  width: 35%;
+  background-color: var(--btn-color);
+  color: var(--color-light);
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 0.8rem 1rem;
+  display: none;
+}
+/*================= Container CSS =================*/
+.container {
+  max-width: 96rem;
+  height: 90vh;
+  background-color: rgb(247, 247, 247);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+    url(../images/background4.jpg);
+  margin: 0 auto;
+  overflow: auto;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/*================= Message markup CSS ==================*/
+.message {
+  clear: both;
+  padding: 0.5rem 1.3rem;
+  max-width: 55rem;
+  overflow-wrap: break-word;
+  color: var(--colr-dark);
+}
+.left_message_box {
+  float: left;
+  background-color: var(--left-chat-color);
+  margin: 1rem 1.5rem 0;
+  border-radius: 1.5rem 1.5rem 1.5rem 0;
+}
+.right_message_box {
+  float: right;
+  background-color: var(--right-chat-color);
+  margin: 0.4rem 1.5rem 0;
+  border-radius: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.userName {
+  font-size: 1.5rem;
+  color: var(--heading-color);
+  font-weight: 600;
+  font-style: italic;
+  text-transform: capitalize;
+}
+.msgTime {
+  text-align: right;
+  font-weight: 500;
+  margin-top: 0.2rem;
+  color: var(--colr-dark);
+  font-size: 1.2rem;
+}
+/*================= Form Area CSS  =================*/
+form {
+  width: 90rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.input_box {
+  width: 100%;
+  padding: 1.4rem 2rem;
+  border: 0;
+  outline: none;
+  text-align: left;
+  font-size: 1.8rem;
+  border-radius: 2.5rem 0 0 2.5rem;
+  display: inline-block;
+  background-color: var(--color-light);
+  margin: 1rem 0;
+}
+
+.input_area {
+  float: left;
+  width: 92%;
+  clear: both;
+}
+
+.btn {
+  float: right;
+  padding: 1.4rem 2rem;
+  border: 0;
+  display: block;
+  text-align: center;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 0 2rem 2rem 0;
+  background-color: var(--btn-color);
+  color: var(--color-light);
+  width: 8%;
+  margin: 1rem 0;
+}

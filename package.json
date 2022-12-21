@@ -1,0 +1,22 @@
+{
+  "name": "chat_application",
+  "version": "1.0.0",
+  "description": "This is a realtime  chat application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index"
+  },
+  "keywords": [
+    "chat",
+    "app"
+  ],
+  "author": "Md Sahi Alam Khan",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
