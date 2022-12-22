@@ -5,6 +5,7 @@ const { response } = require("express");
 // create Express App
 const express = require("express");
 const { request } = require("http");
+const path = require("path");
 const app = express();
 
 // Create Server and Port
@@ -21,7 +22,7 @@ app.use(express.static("public"));
 
 app.get("/", (request, response) => {
   // response.sendFile(__dirname + "/index.html");
-  response.sendFile(__dirname + './index.html');
+  response.sendFile(path.join(__dirname + './public/index.html'));
 });
 
 const users = {};
