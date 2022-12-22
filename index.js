@@ -20,7 +20,9 @@ http.listen(PORT, () => {
 app.use(express.static("public"));
 
 app.get("/", (request, response) => {
-  response.sendFile(__dirname + "index.html");
+  response.json({
+    name: sahil
+  })
 });
 
 const users = {};
