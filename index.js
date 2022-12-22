@@ -18,7 +18,7 @@ http.listen(PORT, () => {
 });
 
 // Accessable folder and file path
-app.use(express.static("public"));
+app.use('/static', express.static(path.join(__dirname + '/public')));
 
 app.get("/", (request, response) => {
   // response.sendFile(__dirname + "/index.html");
