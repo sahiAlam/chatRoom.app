@@ -6,7 +6,7 @@ let name;
 
 do {
   name = prompt("Enter your name to connect");
-} while (!name);
+} while (!name.trim());
 
 if (name != null) {
   window.addEventListener("load", () => {
@@ -42,6 +42,7 @@ form.addEventListener("submit", (e) => {
 
   //Time
   const createTime = new Date();
+  console.log(createTime);
   time = createTime.getHours() + ":" + createTime.getMinutes();
 
   if (messageInput.value != "") {
