@@ -18,15 +18,10 @@ http.listen(PORT, () => {
 });
 
 // Accessable folder and file path
-app.use('/static', express.static(path.join(__dirname + '/public')));
+app.use('/', express.static(path.join(__dirname + '/public')));
 
 app.get("/", (request, response) => {
-  // response.sendFile(path.join(__dirname + './public/index.html'));
-  const data = response.json({
-    name: "sahil",
-    age: "21",
-  })
-  console.log(data);
+  response.sendFile(path.join(__dirname + '/index.html'));
 });
 
 const users = {};
