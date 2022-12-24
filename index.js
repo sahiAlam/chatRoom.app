@@ -21,5 +21,23 @@ http.listen(PORT, () => {
 app.use('/static', express.static(path.join(__dirname + '/public')));
 
 app.get("/", (request, response) => {
-  response.sendFile(path.join(__dirname + './public/index.html'));
+  // response.sendFile(path.join(__dirname + './public/index.html'));
+  const data = response.json({
+    name: "sahil",
+    age: "21",
+  })
+  console.log(data);
+});
+
+const users = {};
+
+// Socket connection
+const io = require("socket.io")(http);
+
+io.on("connection", (socket) => {
+  // Message receiveed to server
+  socket.on("message", (msg) => {
+    // Message broadcast to all the users exccept You
+    socket.broadcast.emit("message", msg);
+  });
 });
